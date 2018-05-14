@@ -25,7 +25,6 @@ BinarySearchTree.prototype.insert = function(val) {
                     break;
                 } else {
                     currentNode = currentNode.left;
-                    break;
                 }
             } else {
                 if (!currentNode.right) {
@@ -33,7 +32,6 @@ BinarySearchTree.prototype.insert = function(val) {
                     break;
                 } else {
                     currentNode = currentNode.right;
-                    break;
                 }
             }
         }
