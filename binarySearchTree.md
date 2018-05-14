@@ -25,7 +25,7 @@ BinarySearchTree.prototype.insert = function(val) {
                     break;
                 } else {
                     currentNode = currentNode.left;
-
+                    break;
                 }
             } else {
                 if (!currentNode.right) {
@@ -33,11 +33,10 @@ BinarySearchTree.prototype.insert = function(val) {
                     break;
                 } else {
                     currentNode = currentNode.right;
-
+                    break;
                 }
             }
         }
-
     }
 }
 
@@ -95,7 +94,6 @@ BinarySearchTree.prototype.contains = function (val, current) {
             return false;
         }
     }
-
 }
 console.log(tree.contains(2)); // true
 console.log(tree.contains(500)); // false
@@ -103,5 +101,3 @@ console.log(tree.contains(8)); // true
 console.log(tree.contains(7)); // true
 console.log(tree.contains(100)); // false
 ```
-
-`
